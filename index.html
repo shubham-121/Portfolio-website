@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+     <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" 
+rel="stylesheet">
+
+     <title>Portfolio</title>
+
+</head>
+<body>
+     <header>
+          <div class="container">
+          <nav>
+                   <p>Shubham Bhatt</p>
+                    <ul id="sidemenu">
+                         <li><a href="#topsection">About</a></li>
+                         <li><a href="#education">Education</a></li>
+                         <li><a href="#skills">Skills</a></li>
+                        
+                         <li><a href="/">Experience</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+               </div>
+          </nav>
+     </header>
+
+     <main>
+          <section class="firstsection">
+               <div class="leftsection">
+                   <div>Hey there, I'm <span class="purple"><u>Shubham Bhatt</u></span> </div>
+                    <!--<div class="ls">Software Developer Enthusiast-->
+                         <span id="element"></span>
+               
+               </div>
+               <div class="rightsection">
+                    <img src="./images/shubham.jpeg">
+               </div>
+          </section>
+
+          <section class="secondsection">
+               <div class="topsection" id="topsection">About</div>
+               <div class="bottomsection">
+                    Hello there!<br><br>
+                    <p>I am a final year Btech CSE student from Graphic Era Hill University (Dehradun).</p>
+                    <p>Throughout my academic journey and projects, I have honed my skills in C++ 
+                    language. Also I have a keen interest in the field of web development.</p>
+                    <p>I have become well-versed in HTML, CSS, JavaScript, SQL, ExpressJS, NodeJs.</p>
+                    <p>With a passion for technology, continuous learning and staying updated
+                         with emerging technologies,
+                    I am eager to tackle new challenges, solve problems, and 
+                    create a innovative solutions for real-world challenges. Also I have decent DSA skills.</p>
+                    <p>Currently I am learning <u>ReactJs.</u></p>
+
+                    <div class="tab-titles">
+                         <p class="tab-links active-link" id="skills"  onclick="opentab('Skills')">Skills</p>
+                         <p class="tab-links" id="education" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                         <ul>
+                              <li><span>C++</span></li>
+                              
+                              <li><span>html,css</span></li>
+                              <li><span>javascript</span></li>
+                              <li><span>ExpressJS</span></li>
+                              <li><span>MySQL</span></li>
+                              <li><span>NodeJS</span></li>
+                         </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                         <ul>
+                              <li><span>2024</span><br>BTech CSE from Graphic Era Hill University,Dehradun</li>
+                              <li><span>2020</span><br>Inter From Cambrian Hall,Dehradun</li>
+                              <li><span>2018</span><br>High School From Cambrian Hall,Dehradun</li>
+                         
+                         </ul>
+                         </div>
+               </div><br><br>
+          </section>
+          
+          <div class="thirdsection" id="project">
+               
+               <div class="topsection" >Projects</div>
+               <div class="project-lists">
+                    <div class="project">
+                         <img src="./images/feedback.jpg">
+                         <div class="layer">
+                              <h3>Feedback Management System</h3>
+                              <p>Created a feedback management system using html,css,js,php.
+                              </p>
+                              <br><br>
+                              <p class="tag">#php #frontend</p>
+                         </div>
+                    </div>
+                    <div class="project">
+                         <img src="./images/webscraper.jpg">
+                         <div class="layer">
+                              <h3>Web Scraper using Python</h3>
+                              <p>Created Web scraper using Python for scraping data from a website</p>
+                              
+                             <br><br>
+                              <p class="tag">#python  #web scraper</p>
+                         </div>
+                    </div>
+                    <div class="project">
+                         <img src="./images/tour.png">
+                         <div class="layer">
+                              <h3>Natours website</h3>
+                              <p>A tour booking webapp created using HTML,CSS,NodeJs,ExpressJS,MongoDB,NodeJs .
+                              </p>
+                              
+                              <br><br>
+                              <p class="tag">#html  #css #backend</p>
+                         </div>
+                    </div>
+               </div>
+
+                   <!--Contact Me--> 
+                   <section class="lastsection">
+                    <!--<h1 class="title1">Contact Me</h1>-->
+                         <div class="contact-left">
+                    
+                              
+                              <h4><i class="fa-solid fa-code"></i></h4> 
+                              <h3>Shubham Bhatt</h3>
+                              <div class="social-icons">
+               
+                                   <a href="https://github.com/shubham-121"><i class="fa-brands fa-github"></i></a> 
+                              <a href="https://www.linkedin.com/in/shubham-bhatt-99301b126/"><i class="fa-brands fa-linkedin"></i></a>
+                              <a href=""><i class="fa-solid fa-square-envelope"></i></a>
+                              </div><br><br>
+                              <a href="resume.pdf" download class="button">Download CV</a>
+                            
+                         </div>
+                         <div class="contact-right" id="contact">
+                              <h1>Contact </h1><br>
+                              <form name="submit-to-google-sheet">
+                                   <p>   Your Name</p>
+                                   <input type="text" name="Name" placeholder="Your Name" required>
+                                   <p>Your Email</p>
+                                   <input type="email" name="email" placeholder="Your Email" required>
+                                   <p>Your Message</p>
+                                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                   <button type="submit" class="btn">
+                                    <a href="">Send</a>
+                                   </button>
+                              </form>
+                              <span id="msg"></span>
+                         </div>
+        </div></section>
+        <footer>
+          <div class="end">
+              <p>Made with <i class="fa-solid fa-heart"></i> by Me</p>
+          </div>
+        </footer>
+     </main>
+
+     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+     var typed = new Typed('#element', {
+       strings: ['A final year BTech CSE student '  , 'And a Web developer enthusiast '],
+       typeSpeed: 90,
+     });
+   </script>
+   <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+          for(tablink of tablinks){
+               tablink.classList.remove("active-link");
+          }
+          for(tabcontent of tabcontents){
+               tabcontent.classList.remove("active-tab");
+          }
+          event.currentTarget.classList.add("active-link");
+          document.getElementById(tabname).classList.add("active-tab");
+     }
+   </script>
+   <script>
+     var sidemenu = document.getElementById("sidemenu");
+
+     function openmenu(){
+          sidemenu.style.right='0';
+     }
+     function closemenu(){
+          sidemenu.style.right='-250px';
+     }
+
+   </script>
+   <script>
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbw4QtPD1e2XVtEaseoj31S9e2WtYWz5PQ_LDl4KtmP7yOWDDAfVlx5kighD8HjAbDQ/exec'
+     const form = document.forms['submit-to-google-sheet']
+     const msg = document.getElementById("msg")
+   
+     form.addEventListener('submit', e => {
+       e.preventDefault()
+       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+         .then(response => {
+          msg.innerHTML = "Message send Successfully!"
+          setTimeout(function(){
+               msg.innerHTML =""
+          },5000)
+          form.reset()
+         })
+         .catch(error => console.error('Error!', error.message))
+     })
+   </script>
+</body>
+</html>
